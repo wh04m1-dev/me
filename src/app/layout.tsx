@@ -30,12 +30,14 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 text-gray-900 min-h-screen flex flex-col`}
       >
         <header className="max-w-5xl mx-auto w-full p-4 flex justify-between items-center border-b border-gray-300">
-          <h1 className="text-xl font-semibold">SENG CHANTHEA</h1>
+          <h1 className="text-xl font-semibold">
+            <Link href="/">SENG CHANTHEA </Link>
+          </h1>
           <nav className="space-x-4">
-            <Link href="/" className="text-blue-600 hover:underline">
+            <Link href="/" className="text-indigo-600 hover:underline">
               Home
             </Link>
-            <Link href="/resume" className="text-blue-600 hover:underline">
+            <Link href="/resume" className="text-indigo-600 hover:underline">
               Resume
             </Link>
           </nav>
