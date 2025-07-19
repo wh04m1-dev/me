@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import ActiveLink from "./ActiveLink";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,15 +32,15 @@ export default function RootLayout({
       >
         <header className="max-w-5xl mx-auto w-full p-4 flex justify-between items-center border-b border-gray-300">
           <h1 className="text-xl font-semibold">
-            <Link href="/">SENG CHANTHEA </Link>
+            <Link href="/">SENG CHANTHEA</Link>
           </h1>
           <nav className="space-x-4">
-            <Link href="/" className="text-indigo-600 hover:underline">
+            <ActiveLink href="/">
               Home
-            </Link>
-            <Link href="/resume" className="text-indigo-600 hover:underline">
+            </ActiveLink>
+            <ActiveLink href="/resume">
               Resume
-            </Link>
+            </ActiveLink>
           </nav>
         </header>
         <main className="flex-grow max-w-5xl mx-auto w-full p-6">
